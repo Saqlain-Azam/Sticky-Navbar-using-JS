@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 350px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/09/Natural-Beauty-Logo-Design-Vector-scaled.jpg" id="logo">
+    </div>
+    <nav id="menu-bar">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Client</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="about-img" src="https://media.istockphoto.com/id/492025669/photo/group-of-business-people-holding-placards-forming-about-us.jpg?b=1&s=612x612&w=0&k=20&c=iPj7Pv2UEYUMeyFaWCH7fPUI4JEK_a7OsBsxSQkidPA=" alt="">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum deleniti beatae nihil harum? Sit eum dolores aperiam. Vero ipsa explicabo, vel corrupti rem quod magnam, ab eius accusantium laborum odit repudiandae amet ea aliquid. Neque minima aliquid iure ea? Id eius vel porro neque excepturi alias beatae perferendis pariatur, doloremque rem necessitatibus possimus! Temporibus molestiae aliquam quia quae voluptatum animi quisquam vero consequuntur necessitatibus, maiores rerum commodi consequatur dolore eligendi fuga omnis quis quam laborum, obcaecati sunt nemo labore. Nisi perferendis est repudiandae qui accusamus perspiciatis accusantium illo pariatur? Numquam eius repudiandae provident ab eaque blanditiis libero officia necessitatibus possimus doloremque optio adipisci assumenda tempora omnis, nam eum veritatis modi ipsa doloribus voluptates voluptatibus! Impedit quod harum dolore, consequatur voluptatum sed eum quo autem fuga deserunt alias in eligendi eius aspernatur molestias culpa beatae iusto quidem natus excepturi reprehenderit, ad repellendus? Vitae excepturi suscipit iure, impedit veniam quod minus dolor unde assumenda non eaque! Quaerat quisquam officiis libero quam sunt ut magni quas dignissimos quibusdam aperiam. Eaque exercitationem est saepe harum modi deserunt voluptatibus blanditiis, expedita eos nobis laudantium vero delectus. Perspiciatis adipisci quibusdam, aut accusantium eos numquam voluptatum non soluta iusto consequuntur cum aperiam ipsa ex deleniti praesentium facere recusandae dolor placeat rerum possimus similique in nemo minima. Rerum impedit animi repellat, ut quidem molestias excepturi exercitationem qui iste quam iusto ea incidunt dignissimos reiciendis odit totam necessitatibus dolor, possimus blanditiis, ipsa esse ex. Excepturi repudiandae dolor facere, officia harum adipisci dicta voluptatem quam ipsam velit, provident, mollitia porro. Saepe, autem. Quas impedit saepe enim veniam harum veritatis aliquam, beatae, incidunt fugit ipsa perferendis optio, eligendi aperiam provident! Et dolore voluptatibus aspernatur libero explicabo pariatur totam deleniti quae commodi. Ullam at doloremque atque voluptas quam quo assumenda iure praesentium, dolor facere! Itaque, officiis quam! Iste quibusdam modi consequatur ipsam, velit error ad praesentium suscipit aspernatur, inventore omnis mollitia quas dolorum odit fuga corrupti, deserunt deleniti blanditiis eos labore. Magni sit dolore reiciendis illum culpa ducimus? Eaque voluptate quam vero amet sequi, animi fugiat, molestiae quo hic aspernatur adipisci facere! Asperiores veniam magnam dolor explicabo! Quaerat tempora quae laboriosam est reprehenderit dolorem repellat nisi optio iste autem iusto repudiandae corporis, deleniti non cupiditate officiis. Magni asperiores, in sequi maxime repellat ad fugit pariatur id consequatur saepe molestias recusandae suscipit molestiae! Nemo ducimus, sunt maxime beatae corporis sapiente. Consectetur, dolores? In, nihil deserunt sapiente aliquam vero eaque odit voluptas! Porro asperiores, minus est repellendus temporibus quae, obcaecati a assumenda accusamus, voluptatum nobis quaerat reiciendis incidunt eaque autem corporis hic laborum cumque maiores iste perferendis tenetur repellat. Ipsum sit consequuntur ipsam dicta necessitatibus. Veritatis quam non eius iusto quibusdam recusandae ad qui praesentium, maiores provident voluptatem deserunt repudiandae excepturi ullam ut eum placeat dolore nam accusamus! Nobis earum debitis quas molestiae neque maxime perspiciatis nemo deserunt similique accusamus consequatur, corrupti aliquid officiis exercitationem itaque officia aliquam, quod laborum facilis? Ullam ducimus veniam quisquam non cupiditate aliquam, accusantium optio dolores dolorem illum blanditiis exercitationem sed laborum voluptas modi quidem consectetur et. Nihil, ullam!
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function()
+        {
+            let navbar = document.getElementById("menu-bar");
+            if(window.pageYOffset >= 200)
+            {
+                navbar.classList.add('sticky');
+            }
+            else
+            {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
